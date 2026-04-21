@@ -2,3 +2,18 @@ body{
     background-color: #ddd;
     font-size: 20px;
 }
+#content{
+    max-width: 60%;
+    border: 1px solid darkgray;
+    margin: 40px auto;
+    padding: 50px;
+}
+p{
+    color: #035f9c;
+    font-size: 1.3em;
+}
+hr{
+    height: 3px;
+    background-color: #035f9c;
+    width: 80%;
+}
