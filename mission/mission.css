@@ -1,22 +1,25 @@
 #Content{
     max-width: 40%;
     border: 1px solid darkgray;
-    padding: 50px;
+    padding: 100px;
     margin: 40px auto;
 }
 h1{
     text-align: center;
-    font-size: 2em;
+    font-size: 4em;
 }
 h4{
     text-align: center;
     color: #035f9c;
+    margin-bottom: 0;
 }
 hr{
     margin: 0 auto;
 }
+li{
+    margin: 16px auto;
+}
 #logo{
-    scale: 0.5;
-    display: block;
-    margin: 0 auto;
+    scale: 0.25;
+    text-align: center;
 }
