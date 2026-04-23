@@ -2,6 +2,7 @@
     max-width: 60%;
     border: 1px solid darkgray;
     padding: 50%;
+    margin: 0 auto;
 }
 h1{
     text-align: center;
