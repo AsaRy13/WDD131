@@ -19,7 +19,10 @@ hr{
 li{
     margin: 16px auto;
 }
-#logo{
-    scale: 0.25;
+footer{
     text-align: center;
+}
+#logo{
+    height: 25%;
+    width: 25%;
 }
