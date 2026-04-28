@@ -1,3 +1,11 @@
+body{
+    background-color: green;
+}
 h1{
     text-align: center;
+}
+#content{
+    max-width: 60%;
+    border: 1px solid darkgray;
+    margin: 30px auto;
 }
