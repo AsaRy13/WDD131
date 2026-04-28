@@ -1,11 +1,14 @@
 body{
-    background-color: green;
+    background-color: lightgrey;
 }
 h1{
     text-align: center;
 }
+p{
+    text-align: center;
+}
 #content{
-    max-width: 60%;
+    max-width: 40%;
     border: 1px solid darkgray;
     margin: 30px auto;
 }
