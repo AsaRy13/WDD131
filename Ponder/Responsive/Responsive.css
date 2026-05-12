@@ -43,6 +43,23 @@ nav a:hover {
     background-color: black;
     margin: 5px 0;
 }
+
+.menu-btn div {
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+.change .bar1 {
+  transform: translate(0, 8px) rotate(-45deg);
+}
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
+}
+
+.hide a {
+    display: inline-block;
+}
+
 footer {
     text-align: center;
 }
