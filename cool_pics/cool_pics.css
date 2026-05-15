@@ -45,7 +45,7 @@ h1, nav, p{
     max-width: 725px;
 }
 
-img{
+#images img{
     object-fit: cover;
     height: 200px;
     width: 200px;
@@ -60,15 +60,45 @@ img{
     display: none;
 }
 
-button{
+#short_nav button{
     color: white;
     background-color: #5555ff;
     border: none;
 }
 
+dialog img {
+    width: 90%;
+    display: block;
+    margin: 20vh auto;
+}
+dialog {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.75);
+}
+.close-viewer {
+    position: absolute;
+    top: 10vh;
+    right: 2vh;
+    padding: 3px 6px;
+    font-size: 1.5em;
+    border: 1px solid white;
+    color: white;
+    background-color: rgba(0,0,0,0);
+}
+
+@media screen and (max-width: 585px){
+    #long_nav a{
+        display: block;
+    }
+}
+
 @media screen and (min-width: 585px) and (max-width: 890px){
     #images{
         grid-template-columns: 1fr 1fr;
+    }
+    #long_nav a{
+        display: block;
     }
     #long_nav{
         display: none;
@@ -81,10 +111,17 @@ button{
     #images{
         grid-template-columns: 1fr 1fr 1fr;
     }
+    #long_nav a{
+        display: flexbox;
+    }
     #long_nav{
         display: block;
     }
     #short_nav{
         display: none;
+    }
+    dialog img {
+        width: 60%;
+        margin: 15vh auto;
     }
 }
