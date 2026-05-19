@@ -1,5 +1,6 @@
 body{
     background-color: lightgrey;
+    font-family: Arial, Helvetica, sans-serif;
 }
 h1{
     text-align: center;
@@ -11,4 +12,36 @@ p{
     max-width: 40%;
     border: 1px solid darkgray;
     margin: 30px auto;
+}
+
+#links{
+    display: grid;
+    width: 80%;
+    margin: 0 auto;
+    max-width: 725px;
+    text-align: center;
+}
+
+#links a{
+    border: 1px solid black;
+    margin: 10px;
+    padding: 10px;
+}
+
+@media screen and (max-width: 585px){
+    #links{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (min-width: 585px) and (max-width: 890px){
+    #links{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 890px) {
+    #links{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
