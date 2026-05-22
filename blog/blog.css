@@ -1,0 +1,73 @@
+h1, footer{
+    text-align: center;
+}
+
+h1, h2{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+hr{
+    border-color: yellow;
+    border-style: solid;
+}
+
+.divider{
+    margin: 30px 0;
+}
+
+nav, .book-info{
+    text-align: right;
+}
+
+h2{
+    color: maroon;
+}
+
+nav a{
+    color: maroon;
+    text-decoration: none;
+    padding: 0 20px;
+}
+
+nav, p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.book-image{
+    margin: 0 auto;
+    display: block;
+    object-fit: contain;
+    height: 200px;
+}
+
+.book-display{
+    width: 365px;
+}
+
+.book-showcase{
+    display: grid;
+}
+
+@media screen and (min-width: 500px) {
+    .book-showcase{
+        grid-template-columns: 1fr 0.5fr 1fr;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    .divider{
+        grid-column: 2;
+        grid-row: 1;
+        height: 350px;
+        width: 0px;
+        margin: 0 auto;
+    }
+    .book-info{
+        grid-column: 1;
+        grid-row: 1;
+        min-width: 100px;
+    }
+    .book-display{
+        grid-column: 3;
+        grid-row: 1;
+    }
+}
