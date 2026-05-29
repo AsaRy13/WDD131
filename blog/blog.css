@@ -1,5 +1,5 @@
 main{
-    margin: 100px auto;
+    margin: 0px auto;
 }
 
 h1, footer{
@@ -50,18 +50,19 @@ nav, p{
 
 .book-showcase{
     display: grid;
+    margin: 0px auto;
 }
 
 @media screen and (min-width: 500px) {
     .book-showcase{
         grid-template-columns: 1fr 0.5fr 1fr;
         max-width: 600px;
-        margin: 0 auto;
+        margin: 100px auto;
     }
     .divider{
         grid-column: 2;
         grid-row: 1;
-        height: 350px;
+        height: 400;
         width: 0px;
         margin: 0 auto;
     }
