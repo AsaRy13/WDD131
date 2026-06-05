@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Asa Ryan Fletcher">
+        <meta name="description" content="This page is an example of a form.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Event Ticket</title>
+        <link rel="stylesheet" href="eventform.css">
+        <link rel="icon" href="../RIcon.png">
+        <script src="eventform.js" defer></script>
+    </head>
+    <body>
+        <main class="wrapper">
+            <h1>Event Form</h1>
+
+            <form id="eventform">
+                <div class="field">
+                    <label for="firstName">First Name</label>
+                    <input id="firstName" name="firstName" type="text" required />
+                </div>
+
+                <div class="field">
+                    <label for="lastName">Last Name</label>
+                    <input id="lastName" name="lastName" type="text" required />
+                </div>
+
+                <div class="field full">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" required />
+                </div>
+
+                <div class="field">
+                    <label for="eventType">Type</label>
+                    <select 
+                    id="eventType"
+                    name="eventType"
+                    aria-controls="iNumberContainer accessCodeContainer"
+                    required
+                    >
+                        <option value="">Choose One...</option>
+                        <option value="student">Student</option>
+                        <option value="guest">Guest</option>
+                    </select>
+                </div>
+
+                <div class="field">
+                    <label for="date">Date</label>
+                    <input id="date" name="date" type="date" required />
+                </div>
+
+                <div id="iNumberContainer" class="field full" hidden>
+                    <label for="iNumber">Student I#</label>
+                    <input id="iNumber" name="iNumber" type="number">
+                </div>
+
+                <div id="accessCodeContainer" class="field full" hidden>
+                    <label for="accessCode">Access Code</label>
+                    <input id="accessCode" name="accessCode" type="text">
+                </div>
+
+                <button class="full" type="submit">Create Ticket</button>
+            </form>
+
+            <section id="output" aria-live="polite"></section>
+        </main>
+    </body>
+</html>

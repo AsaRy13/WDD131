@@ -30,7 +30,7 @@ form.addEventListener("submit", event => {
     
     const numberOfCampuses = form.travelRange.value;
     const campuses = form.campus;
-    const notSubmittable = false;
+    let notSubmittable = false;
     console.log(campuses);
 
     if (numberOfCampuses === "one" && getCheckedCampuses(campuses).length == 0){
