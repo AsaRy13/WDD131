@@ -74,6 +74,7 @@ const hikes = [
 
 const searchButton = document.getElementById("searchButton");
 let randomNum = Math.floor(Math.random() * hikes.length);
+let hikeContainer = document.getElementById("hike-container");
 console.log(randomNum);
 
 
@@ -96,13 +97,13 @@ searchButton.addEventListener("click", e => {
 
   filteredHikes.sort((a, b) => a.difficulty - b.difficulty);
 
-  document.getElementById("hike-container").innerHTML = '';
+  hikeContainer.innerHTML = '';
 
   filteredHikes.forEach(hike => {hikesTemplate(hike)});
 });
 
 function hikesTemplate(hike){
-  document.getElementById("hike-container").innerHTML += `
+  hikeContainer.innerHTML += `
     <div class="hike-card">
       <div class="hike-content">
         <h2>${hike.name}</h2>
@@ -129,13 +130,8 @@ function makeDifficultyString(difficulty){
   return difficultyString;
 }
 
-function renderHike(hike) {
-    let html = hikesTemplate(hike);
-    hikeContainer.innerHTML += html
-}
-
 function init() {
-    renderHike(hikes[randomNum]);
+    hikesTemplate(hikes[randomNum]);
 }
 
 init();

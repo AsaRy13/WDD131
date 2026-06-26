@@ -7,6 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Recipe Book</title>
         <link rel="stylesheet" href="recipes.css">
+        <script src="recipes.js" defer></script>
 
         
         <!-- Open Graph (Facebook, LinkedIn, etc.) -->
@@ -37,30 +38,12 @@
             </div>
             <div id="search-box">
                 <input type="search" placeholder="Find a recipe" name="search" id="search">
-                <button><img src="images/search.svg"></button>
+                <button id="search-button"><img src="images/search.svg"></button>
             </div>
             <hr>
         </header>
         <main>
             <div id="content">
-                <img src="images/apple-crisp.jpg" class="recipe-image">
-                <div class="recipe-details">
-                    <button class="recipe-label"><b>dessert</b></button>
-                    <h2 class="recipe-title">Apple Crisp</h2>
-                    <span
-                    class="recipe-rating"
-                    role="img"
-                    aria-label="Rating: 4 out of 5 stars"
-                    >
-                    <span aria-hidden="true" class="icon-star">⭐</span>
-                    <span aria-hidden="true" class="icon-star">⭐</span>
-                    <span aria-hidden="true" class="icon-star">⭐</span>
-                    <span aria-hidden="true" class="icon-star">⭐</span>
-                    <span aria-hidden="true" class="icon-star-empty">☆</span>
-                    </span>
-
-                    <p class="recipe-description">This apple crisp recipe is a simple yet delicious fall dessert that's great served warm with vanilla ice cream.</p>
-                </div>
             </div>
         </main>
         <footer>
